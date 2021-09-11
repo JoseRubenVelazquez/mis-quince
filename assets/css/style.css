@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/*Body*/
+body{
+    font-family: 'Oswald', sans-serif;
+}
+
+/*Principal container*/
+.contain{
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/*Header*/
+header{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    margin: auto;
+    background-color: #ffa07a;
+    margin-bottom: 1px;
+}
+
+.quince{
+    line-height: 40px;
+    word-spacing: 20px;
+    letter-spacing: 10px;
+    font-size: 30px;
+}
+
+/*Navbar*/
+nav{
+    list-style: none;
+    background: #fff;
+    text-align: center;
+    font-size: 18px;
+    height: 30px;
+}
+
+.buttons{
+    position: relative;
+    float: left;
+    /*margin: 0 40px;*/
+    width: auto;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: #000;
+    background: #fff;
+    letter-spacing: 3px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.buttons:hover{
+    background: #ffa07a;
+}
+.buttons:active{
+    transform: translateY(2px);
+    transition: all ease-in-out 250ms;
+}
+
+.menu{
+    width: auto;
+    height: auto;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    display: none;
+}
+.menu img{
+    width: auto;
+    height: auto;
+}
+.menu:active{
+    transform: translateY(2px);
+    transition: all ease-in-out 250ms;
+}
+  
+/*First section*/
+section{
+    position: relative;
+    margin: 0px auto;
+    width: 100%;
+    height: 450px;
+    background-color: #ffdead;
+}
+section p img{
+    width: 50%;
+    height: 450px;
+    float: left;
+}
+section h1{
+    margin: auto 3px;
+    text-align: center;   
+}
+section h2{
+    margin: auto;
+    text-align: center;   
+}
+section h3{
+    margin: 10px auto;
+    text-align: center;  
+}
+section p{
+    text-align: center; 
+}
+
+/*My History*/
+h1{
+    margin: 5px auto;
+    text-align: center;
+}
+
+.photos{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 400px;
+}
+.photos img{
+    width: 100%;
+    height: 400px;  
+}
+
+/*Church*/
+.church{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 450px;
+    background-color: #ffdead;
+}
+.church img{
+    width: 100%;
+    height: 230px;  
+}
+.church h6{
+    text-align: justify;
+    margin: 10px 10px;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+.church p{
+    text-align: justify;
+    margin: 10px 10px;
+    letter-spacing: 1px
+}
+
+form{
+    text-align: center;  
+    margin: 30px auto;
+}
+
+input{
+    width: 200px;
+    height: 40px;
+    border: 2px solid;
+    border-color: #000;
+    border-radius: 10px;
+    background: #f4a460;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 18px;
+}
+input:active{
+    transform: translateY(2px);
+}
+
+/*Terrace*/ 
+.terrace{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 450px;
+    background: #ffdead;
+}
+.terrace img{
+    width: 100%;
+    height: 230px;
+}
+.terrace h6{
+    text-align: justify;
+    margin: 10px 10px;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+.terrace p{
+    text-align: justify;
+    margin: 5px 10px;
+    letter-spacing: 1px;
+}
+
+/*Confirmation*/
+.container{
+    text-align: center;
+    width: 300px;
+    margin: 10px auto;
+    line-height: 40px;
+}
+
+/*Whatsap Buttonp*/
+.button-whatsapp{
+    display: table;
+    text-decoration: none; 
+    color: #000; 
+    font-size: 18px;
+    letter-spacing: 5px;
+    border: 2px solid;
+    border-radius: 10px;
+    font-weight: bold;
+    background: #f4a460 url(../images/whatsapp.png) no-repeat 40px center; background-size: 28px;
+    width: 280px;
+    height: 40px;   
+}
+
+.container .button-whatsapp{
+    color: black;
+}
+.container .button-whatsapp:active{
+    transform: translateY(2px);
+}
+
+/*Footer*/
+footer{
+    width: 100%;
+    height: 55px;
+    margin: auto auto 5px;
+    background-color: #ffa07a;
+}
+
+.footer{
+    text-align: center;
+    font-weight: bold;
+    line-height: 25px;
+    letter-spacing: 3px;
+    font-size: 18px;
+}
+
+.phone{
+    text-align: center;
+    font-weight: bold;
+    line-height: 2px;
+    letter-spacing: 3px;
+}
+
+/*Responsive design*/
+@media(min-width: 320px) and (max-width: 767px){
+    nav{
+        height: auto;
+    }
+    .quince{
+        word-spacing: 10px;
+        letter-spacing: 10px;
+        font-size: 25px;
+    }
+
+    .buttons{
+        width: 100%;
+        height: auto;
+        text-align: left;
+        display: none;
+        font-weight: 500;
+        margin-left: 0;
+    }
+
+    .menu{
+        display: block;
+    }
+
+    section{
+        height: 460px;
+    }
+    section p img{
+        height: 460px;
+    }
+    .church{  
+        height: 475px;
+    }
+}
+@media(max-width: 768px){
+    .buttons{
+        width: 100%;
+        height: auto;
+        text-align: left;
+        display: none;
+        font-weight: 500;
+        margin-left: 0;
+    }
+    .menu{
+        display: block;
+    }
+}
+@media(min-width: 769px) and (max-width: 850px){
+    .buttons{
+        margin: 0 7px;
+        font-size: 16px;
+        position: relative;
+    }
+    .menu{
+        display: none;
+    }
+}  
+@media(min-width: 851px) and (max-width: 1023px){
+    .buttons{
+            margin: 0 10px;
+            font-size: 18px;
+            position: relative;
+        }
+        .menu{
+            display: none;
+        }
+    }
+@media(min-width: 1024px){
+    .buttons{
+        margin: 0 40px;
+        font-size: 18px;
+        position: relative;
+    }
+    .menu{
+        display: none;
+    }
+}
