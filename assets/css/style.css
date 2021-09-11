@@ -24,8 +24,9 @@ header{
     width: 100%;
     height: 40px;
     margin: auto;
-    background-color: #ffa07a;
+    background: #484f4f;
     margin-bottom: 1px;
+    color: #fff;
 }
 
 .quince{
@@ -59,7 +60,8 @@ nav{
     font-weight: 500;
 }
 .buttons:hover{
-    background: #ffa07a;
+    background: #484f4f;
+    color: #fff;
 }
 .buttons:active{
     transform: translateY(2px);
@@ -87,22 +89,19 @@ nav{
 /*First section*/
 section{
     position: relative;
-    margin: 0px auto;
+    margin: 15px auto;
     width: 100%;
-    height: 450px;
-    background-color: #ffdead;
+    height: 400px;
+    background: #484f4f;
+    color: #fff;
 }
-section p img{
+section img{
     width: 50%;
-    height: 450px;
+    height: 400px;
     float: left;
 }
 section h1{
-    margin: auto 3px;
-    text-align: center;   
-}
-section h2{
-    margin: auto;
+    margin: auto 5px;
     text-align: center;   
 }
 section h3{
@@ -135,12 +134,13 @@ h1{
     position: relative;
     margin: auto;
     width: 100%;
-    height: 450px;
-    background-color: #ffdead;
+    height: 410px;
+    background: #484f4f;
+    color: #fff;
 }
 .church img{
     width: 100%;
-    height: 230px;  
+    height: 220px;  
 }
 .church h6{
     text-align: justify;
@@ -163,10 +163,11 @@ input{
     width: 200px;
     height: 40px;
     border: 2px solid;
-    border-color: #000;
+    border-color: #b2c2bf;
     border-radius: 10px;
-    background: #f4a460;
-    font-weight: bold;
+    background: #b2c2bf;
+    letter-spacing: 1px;
+    font-weight: 500;
     cursor: pointer;
     font-size: 18px;
 }
@@ -179,12 +180,13 @@ input:active{
     position: relative;
     margin: auto;
     width: 100%;
-    height: 450px;
-    background: #ffdead;
+    height: 410px;
+    background: #484f4f;
+    color: #fff;
 }
 .terrace img{
     width: 100%;
-    height: 230px;
+    height: 220px;
 }
 .terrace h6{
     text-align: justify;
@@ -210,19 +212,20 @@ input:active{
 .button-whatsapp{
     display: table;
     text-decoration: none; 
-    color: #000; 
+    color: #fff; 
     font-size: 18px;
     letter-spacing: 5px;
     border: 2px solid;
     border-radius: 10px;
     font-weight: bold;
-    background: #f4a460 url(../images/whatsapp.png) no-repeat 40px center; background-size: 28px;
+    background: #484f4f url(../images/whatsapp.png) no-repeat 40px center; background-size: 28px;
     width: 280px;
     height: 40px;   
 }
 
 .container .button-whatsapp{
-    color: black;
+    color: #fff;
+    font-weight: 500;
 }
 .container .button-whatsapp:active{
     transform: translateY(2px);
@@ -233,12 +236,13 @@ footer{
     width: 100%;
     height: 55px;
     margin: auto auto 5px;
-    background-color: #ffa07a;
+    background-color: #484f4f;
+    color: #fff;
 }
 
 .footer{
     text-align: center;
-    font-weight: bold;
+    font-weight: 500;
     line-height: 25px;
     letter-spacing: 3px;
     font-size: 18px;
@@ -246,13 +250,13 @@ footer{
 
 .phone{
     text-align: center;
-    font-weight: bold;
+    font-weight: 500;
     line-height: 2px;
     letter-spacing: 3px;
 }
 
 /*Responsive design*/
-@media(min-width: 320px) and (max-width: 767px){
+@media(min-width: 320px) and (max-width: 420px){
     nav{
         height: auto;
     }
@@ -278,11 +282,54 @@ footer{
     section{
         height: 460px;
     }
-    section p img{
+    section  img{
         height: 460px;
     }
+
     .church{  
         height: 475px;
+    }
+
+    .terrace{  
+        height: 450px;
+    }
+}
+@media(min-width: 421px) and (max-width: 767px){
+    nav{
+        height: auto;
+    }
+    .quince{
+        word-spacing: 10px;
+        letter-spacing: 10px;
+        font-size: 25px;
+    }
+
+    .buttons{
+        width: 100%;
+        height: auto;
+        text-align: left;
+        display: none;
+        font-weight: 500;
+        margin-left: 0;
+    }
+
+    .menu{
+        display: block;
+    }
+
+    section{
+        height: 460px;
+    }
+    section  img{
+        height: 460px;
+    }
+
+    .church{  
+        height: 430px;
+    }
+
+    .terrace{  
+        height: 430px;
     }
 }
 @media(max-width: 768px){
