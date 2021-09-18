@@ -1,27 +1,11 @@
-/*Dirección Parroquia*/ 
+/*Dirección Parroquia*/
 function findMe(){
-    var coord = {lat:20.6490817, lng: -103.4555886};
-    var map = new google.maps.Map(document.getElementById('map'),{
-      zoom: 18,
-      center: coord
-    });
-    var marker = new google.maps.Marker({
-      position: coord,
-      map: map
-    });
+    document.getElementById('map').innerHTML='<div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.503580399469!2d-103.45558858576133!3d20.649081706008605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428abf8fa776f5d%3A0x3b0e067e2939f9f0!2sParroquia%20Mar%C3%ADa%20Madre%20del%20Redentor!5e0!3m2!1ses!2smx!4v1631918344402!5m2!1ses!2smx" width="100%" height="410" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>';
 }
 
 /*Direcciòn Salon de Evento*/
 function searchMe(){
-  var coord = {lat:20.645087, lng: -103.4470447};
-  var map = new google.maps.Map(document.getElementById('maps'),{
-    zoom: 18,
-    center: coord
-  });
-  var marker = new google.maps.Marker({
-    position: coord,
-    map: map
-  });
+    document.getElementById('maps').innerHTML='<div class="maps"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.601667118009!2d-103.44704468576138!3d20.64508700614271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428adf85f2cb5bf%3A0xce2f0ed9cac12d8c!2sDel%20Sol%2076%2C%20Para%C3%ADsos%20del%20Colli%2C%2045069%20Zapopan%2C%20Jal.!5e0!3m2!1ses!2smx!4v1631928907351!5m2!1ses!2smx" width="100%" height="410" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>';
 }
 
 /*Menú*/

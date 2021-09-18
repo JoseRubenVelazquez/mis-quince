@@ -294,11 +294,22 @@ footer{
     }
 
     section{
-        height: 440px;
+        height: 480px;
     }
     section  img{
-        height: 440px;
-        width: 35%;
+        height: 480px;
+        width: 50%;
+    }
+    section h1{
+        font-size: 28px;
+        padding-top: 5px;
+    }
+    section h3{
+        font-size: 23px;
+    }
+    section p{
+        margin: auto 3px;
+        font-size: 18px;
     }
 
     .church{  
@@ -333,10 +344,10 @@ footer{
     }
 
     section{
-        height: 460px;
+        height: 420px;
     }
     section  img{
-        height: 460px;
+        height: 420px;
     }
 
     .church{  
@@ -380,6 +391,10 @@ footer{
             display: none;
         }
     }
+    section h1{
+        padding-top: 20px;
+    }
+    
 @media(min-width: 1024px){
     .buttons{
         margin: 0 40px;
@@ -390,3 +405,4 @@ footer{
         display: none;
     }
 }
+
