@@ -44,18 +44,46 @@
       </ul>
     </nav>
 
+    <!--Up Arrow-->
+    <div class="cielo">
+      <i class="fas fa-arrow-up"></i>
+    </div>
+  
     <!--Pincipal section-->
     <section class="descrip-name">
       <img src="assets/images/image2.jpg" alt="Quinceañera">
+        <!--Temporizador-->
+        <div class="timer">
+          <div class="bloque">
+            <div class="days" id="days">000</div>
+            <p>DIAS</p>
+          </div>
+
+          <div class="bloque">
+            <div class="hours" id="hours">00</div>
+            <p>HORAS</p>
+          </div>
+
+          <div class="bloque">
+            <div class="minutes" id="minutes">00</div>
+            <p>MINUTOS</p>
+          </div>
+
+          <div class="bloque">
+            <div class="seconds" id="seconds">00</div>
+            <p>SEGUNDOS</p>
+          </div>
+        </div>
+        
         <h1>Alejandra Nataly Valenzuela Ramírez</h1>
 
         <h3>Mis Papás</h3>
-        <p>Alfonso Antonio Valenzuela López </p>
-        <p>Elizabeth Catalina Ramírez Buenrostro</p>
+        <p>Alfonso Antonio Valenzuela López</p> 
+        <p class="mad">Elizabeth Catalina Ramírez Buenrostro</p>
           
         <h3>Mis Padrinos</h3>
         <p>Hector Gallegos Cortes</p> 
-        <p>Claudia Jazmín Ramírez Buenrostro</p>
+        <p class="mad">Claudia Jazmín Ramírez Buenrostro</p>
     </section>
 
       <!--My History-->
@@ -106,12 +134,11 @@
           <p><span>Fecha:</span> 02 de Enero de 2022 18:00 hrs</p>
           <p><span>Domicilio:</span> Av. El Colli Esq. Jacarandas 1095-A, Paraisos del Colli, Zapopan, Jalisco</p>
 
-        <form action="" onclick="findMe()" class="finfMe">
+        <form action="" onclick="findMe()">
           <input type="submit" value="Mapa">
         </form>
       </div>
       
-
     <!--Terrace--> 
     <h1 id="reception">Recepción</h1>
       <div class="terrace" id="maps">
@@ -121,7 +148,7 @@
           <p><span>Fecha:</span> 02 de Enero de 2022 20:00 hrs</p>
           <p><span>Domicilio:</span> Del Sol 76 Esq. Volcán Quinceo, Paraisos del Colli, Zapopan, Jalisco</p>
 
-          <form action="" onclick="searchMe()">
+          <form action="" onclick="searchMe()" >
             <input type="submit" value="Mapa" id="reception">
           </form>
       </div>
@@ -131,7 +158,7 @@
       <div class="container" id="confirmation">
         <a href="https://api.whatsapp.com/send?phone=523317211152&text=%28MyInvitation.com%29+Hola%2C+Confirmo+mi+asistencia%21%21%21" class="button-whatsapp">Confirmar</a>
       </div>
-    
+      
       <footer>
         <p class="footer">Creado por Ruben Velazquez</p>
         <p class="phone">33 10 41 76 53</p>
