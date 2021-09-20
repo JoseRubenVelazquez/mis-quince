@@ -98,6 +98,31 @@ nav{
     right: 50px;
 }
 
+/*Temporizador*/
+.timer{
+    display: inline-block;
+    padding: 10px;
+    color: #000;
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    bottom: 0px;
+    left: 70px;
+    top: 300px;
+    text-align: center;
+
+  }
+  .countdown div{
+    float: left;
+    padding: 10px;
+    color: #000;
+    font-weight: bolder;
+  }
+  .countdown p{
+      width: auto;
+      font-weight: bolder;
+  }
+
 /*First section*/
 section{
     position: relative;
@@ -112,26 +137,6 @@ section img{
     height: 400px;
     float: left;
 }
-
-.timer{
-    display: inline-block;
-    padding: 10px;
-    color: #000;
-    font-size: 20px;
-    color: #fff;
-    cursor: pointer;
-    position: absolute;
-    bottom: 0px;
-    left: 70px;
-    top: 320px;
-    text-align: center;
-  }
-  .bloque{
-    float: left;
-    padding: 10px;
-    color: #000;
-    font-weight: bolder;
-  }
 
 section h1{
     margin: auto 5px;
@@ -327,6 +332,7 @@ footer{
     .menu{
         display: block;
     }
+
     .cielo{
         display: inline-block;
         padding: 8px;
@@ -337,6 +343,34 @@ footer{
         position: fixed;
         bottom: 10px;
         right: 6px;
+    }
+
+    .timer{
+        display: inline-block;
+        padding: 1px;
+        color: #000;
+        font-size: 10px;
+        color: #fff;
+        position: absolute;
+        left: 3px;
+        top: 410px;
+        text-align: center;
+      }
+      .countdown div{
+        float: left;
+        padding: 4px;
+        color: #000;
+        font-weight: bolder;
+      }
+      .countdown p{
+          width: auto;
+          font-weight: bolder;
+          font-size: 16px;
+      }
+      .countdown span{
+        width: auto;
+        font-weight: bolder;
+        font-size: 16px;
     }
 
     section{
@@ -408,6 +442,34 @@ footer{
         right: 6px;
     }
 
+    .timer{
+        display: inline-block;
+        padding: 1px;
+        color: #000;
+        font-size: 10px;
+        color: #fff;
+        position: absolute;
+        left: 30px;
+        top: 340px;
+        text-align: center;
+      }
+      .countdown div{
+        float: left;
+        padding: 4px;
+        color: #000;
+        font-weight: bolder;
+      }
+      .countdown p{
+          width: auto;
+          font-weight: bolder;
+          font-size: 18px;
+      }
+      .countdown span{
+        width: auto;
+        font-weight: bolder;
+        font-size: 18px;
+    }
+
     .menu{
         display: block;
     }
@@ -454,6 +516,8 @@ footer{
         bottom: 10px;
         right: 3px;
     }
+
+    
 }
 @media(min-width: 769px) and (max-width: 850px){
     .buttons{

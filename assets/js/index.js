@@ -23,23 +23,36 @@ $(document).ready(function(){
 });
 
 /*Temporizador*/
-let days = 100;
-let hours = 20;
-let minutes = 59;
-let seconds = 59;
+const $days = document.getElementById('days'),
+$hours = document.getElementById('hours'),
+$minutes = document.getElementById('minutes'),
+$seconds = document.getElementById('seconds'),
+$finalMessage = document.getElementById('.sms-final');
 
-/*Definimos y ejecutamos los segundos*/
-function cSecond(){
-  let txtSeconds;
-  if(seconds < 0){
-    seconds = 59;
+/*Definimos fecha*/
+const countdown = new Date('Jan 02, 2022 18:00:00').getTime();
+
+let interval = setInterval(function(){
+  /*Fecha Actual*/
+  const now = new Date().getTime();
+
+  /*Obtener distancia entre ambas fechas*/
+  let distance = countdown - now;
+
+  /*Calculos a Dìas-Horas-Minutos-Segundos*/
+  let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  let seconds = Math.floor((distance % (1000 * 60)) / (1000));
+
+  /*Mostrar resultados*/
+  $days.innerHTML = days;
+  $hours.innerHTML = hours;
+  $minutes.innerHTML = minutes;
+  $seconds.innerHTML = ('0' + seconds).slice(-2);
+
+  /*Cuando llegue a 0*/
+  if(distance < 0){
+    clearInterval(interval);
   }
-  /*Mostrar segundos en pantalla*/
-  if(seconds < 10){
-    txtSeconds= `0${seconds}`;
-  }else{
-    txtSeconds= seconds;
-  }
-  document.getElementById('seconds').innerHTML = txtSeconds;
-  seconds --;
-}
+}, 1000);
