@@ -144,7 +144,7 @@ section h1{
     font-weight: 500;   
 }
 section h3{
-    margin: 10px auto;
+    margin: 15px auto 1px;
     text-align: center; 
     font-weight: 500;
     font-size: 25px; 
@@ -392,7 +392,7 @@ footer{
         font-size: 18px;
     }
     section p.mad{
-        margin: 10px 3px;
+        margin: 5px 3px;
         font-size: 18px;
     }
 
@@ -475,10 +475,24 @@ footer{
     }
 
     section{
-        height: 420px;
+        height: 400px;
     }
     section  img{
-        height: 420px;
+        height: 400px;
+    }
+    section h1{
+        font-size: 27px;
+    }
+    section h3{
+        font-size: 22px;
+    }
+    section p{
+        margin: 1px 3px;
+        font-size: 20px;
+    }
+    section p.mad{
+        margin: 5px 3px;
+        font-size: 18px;
     }
 
     .church{  
@@ -540,7 +554,15 @@ footer{
         }
     }
     section h1{
-        padding-top: 20px;
+        padding-top: 22px;
+    }
+    section p{
+        font-size: 20px;
+        margin: 1px 5px;
+    }
+    section p.mad{
+        font-size: 20px;
+        margin: 1px 3px;
     }
     
 @media(min-width: 1024px){
